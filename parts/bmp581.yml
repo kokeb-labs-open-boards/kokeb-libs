@@ -1,0 +1,22 @@
+---
+# The record of one part. Chip facts (pins, supply ranges, reference circuits) are NOT copied here: they live in the
+# driver's docs/hardware.yml, which cites the datasheet section and page for each. Schema: docs/part-record.md.
+schema: 1
+id: bmp581
+manufacturer: Bosch Sensortec
+mpn: BMP581
+description: Barometric pressure and temperature sensor, I2C and SPI
+package: LGA-10
+datasheet:
+  repo: kokeb-labs-drivers/driver-bmp581
+  file: docs/datasheets.yml       # document id, revision and SHA-256 of the datasheet the driver was written against
+hardware_record:
+  repo: kokeb-labs-drivers/driver-bmp581
+  file: docs/hardware.yml         # package, pins, reference circuits
+driver: kokeb-labs-drivers/driver-bmp581
+assets:
+  symbol: {state: none}
+  footprint: {state: none}
+  model3d: {state: none}
+lifecycle: {status: unknown, checked: null}   # set from the manufacturer's notice and a distributor check
+classification: public
